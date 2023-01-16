@@ -1,0 +1,98 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" text="VOLVER" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="end">
+      <ion-button color="primary" *ngIf="contact" [routerLink]="'/update-contact/' + contact.id">
+        Editbb
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="contact">
+  <ion-grid class="ion-margin">
+  <!-- <ion-row>
+    <ion-col class="content-col">
+      <ion-thumbnail class="user-image">
+        <img src="/assets/avatar.png">
+      </ion-thumbnail>
+      <ion-text color="dark">
+        <h2 class="user-name">{{contact.firstName}} {{contact.lastName}}</h2>
+      </ion-text>
+
+      <fieldset>
+        <legend><b>INFORMACIÓN</b></legend>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Phone</ion-label>
+          <ion-input color="primary" readonly="true">{{contact.phone}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input color="primary" readonly="true">{{contact.email}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Category</ion-label>
+          <ion-input color="primary" readonly="true">{{contact.category}}</ion-input>
+        </ion-item>
+      </ion-list>
+      </fieldset>
+    </ion-col>
+  </ion-row> -->
+  
+
+
+  <fieldset>
+    <legend><b>DETALLES DEL LIBRO</b></legend>
+  
+      <ion-thumbnail class="user-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/3227/3227053.png">
+      </ion-thumbnail>
+
+    <ion-grid class="ion-margin">
+    <ion-row text-center>    
+      <ion-col size="2">Nombre: </ion-col>
+      <ion-col >{{ contact.nombre }}</ion-col>
+    </ion-row>
+    &nbsp;
+    <ion-row>
+      <ion-col size="2">Autor: </ion-col>
+      <ion-col>{{ contact.autor }}</ion-col>
+    </ion-row>
+    &nbsp;
+    <ion-row>
+      <ion-col size="2">Categoria: </ion-col>
+      <ion-col>{{ contact.categoria }}</ion-col>
+    </ion-row>
+    &nbsp;
+    <ion-row>
+      <ion-col size="2">Valoración: </ion-col>
+      <ion-col>{{ contact.valoracion }}</ion-col>
+    </ion-row>
+    &nbsp;
+    <ion-row>
+      <ion-col size="2">Resumen de libro: </ion-col>
+      <ion-col>{{ contact.resumen }}</ion-col>
+    </ion-row>
+  
+    <br>
+  <br>
+  <ion-list style="text-align:center">
+    <ion-button  color="success" *ngIf="contact" [routerLink]="'/update-contact/' + contact.id">
+      EDITAR
+    </ion-button>
+    &nbsp;
+    &nbsp;
+    <ion-button color="danger" detail="false" (click)="presentAlert(contact.id)">
+      ELIMINAR 
+    </ion-button>
+    <br>
+    <br>
+    <h1 >{{ handlerMessage }}</h1>
+  </ion-list>
+</ion-grid>
+</fieldset>
+</ion-grid>
+</ion-content>

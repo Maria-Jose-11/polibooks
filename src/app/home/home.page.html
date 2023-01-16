@@ -1,0 +1,86 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        Salir
+        <ion-icon slot="end" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      LISTA DE LIBROS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="ion-margin" >
+  <ion-grid class="ion-margin"></ion-grid>
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">Contacts</ion-title>
+      <ion-buttons collapse="true" slot="end">
+        <ion-button class="one" (click)="openNewContactModal()">
+          <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row>
+    <ion-thumbnail class="user-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/4956/4956919.png">
+    </ion-thumbnail>
+  </ion-row>
+  
+
+
+  <ion-button color="danger" (click)="openNewContactModal()">
+    Añadir libro
+    <ion-icon slot="end" name="add-outline"></ion-icon>
+  </ion-button>
+
+  <br>
+  <br>
+  <br>
+
+  <fieldset>
+    
+    <legend>
+      <b>
+        <ion-icon name="star"></ion-icon>
+        2022
+        <ion-icon name="star"></ion-icon>
+      </b>
+    </legend>
+    <br>
+    <ion-grid class="ion-margin">
+    <ion-row text-center>
+      <ion-col>Nombre</ion-col>
+      <ion-col>Autor</ion-col>
+      <ion-col>Categoria</ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    
+    <ion-row class="align-items-center" *ngFor="let contact of contacts | async" [routerLink]="'/contact-details/' + contact.id">
+      <ion-col>{{ contact.nombre }}</ion-col>
+      <ion-col>{{ contact.autor }}</ion-col>
+      <ion-col>{{contact.categoria}}</ion-col>
+      <!-- <ion-icon name="start" *ngFor="let num of [1,2,3,4,5]"
+      (click)="rate(5)" [ngStyle]="{'color':getColor(3)}">
+
+      </ion-icon> -->
+
+      <ion-col>
+        <ion-button color="secondary" [routerLink]="'/contact-details/' + contact.id">
+          Ver info
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  <!-- <ion-list>
+    <ion-item *ngFor="let contact of contacts | async" [routerLink]="'/contact-details/' + contact.id">
+      <ion-label> Nombre: {{ contact.firstName }} {{ contact.lastName }}</ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-grid>
+</fieldset>
+
+</ion-content>

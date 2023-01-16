@@ -1,0 +1,108 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center"><b>Nuevo libro</b></ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismissModal()">Volver
+      <ion-icon slot="start" name="arrow-back" color="dark" >
+      </ion-icon>
+    </ion-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="end"B>
+      <ion-button color="primary" [disabled]="!createContactForm.valid" (click)="submitForm()">
+        Done
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-thumbnail class="user-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3227/3227053.png">
+    </ion-thumbnail>
+  </ion-row>
+  &nbsp;
+  &nbsp;
+  <fieldset>
+    <legend><b>INFORMACION</b></legend>
+  <form [formGroup]="createContactForm" #createForm="ngForm" (ngSubmit)="createContact(createContactForm.value)">
+    <br>
+    
+    <ion-list>
+      <ion-label><b>&nbsp;&nbsp;Nombre:</b></ion-label>
+      <ion-item>
+        <ion-input placeholder="Nombre" inputMode="text" clearInput="true" formControlName="nombre" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-label>&nbsp;&nbsp;<b>Autor:</b></ion-label>
+      <ion-item>
+        <ion-input placeholder="Autor" inputMode="text" clearInput="true" formControlName="autor" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label><b>Categoria</b></ion-label>
+        <ion-select placeholder="Seleccione una" formControlName="categoria">
+          <ion-select-option value="Fantasia">Fantasia</ion-select-option>
+          <ion-select-option value="Romántico">Romántico</ion-select-option>
+          <ion-select-option value="Superación Personal">Superación personal</ion-select-option>
+          <ion-select-option value="Terror">Terror</ion-select-option>
+          <ion-select-option value="Policiales">Policiales</ion-select-option>
+          <ion-select-option value="Historia">Historia</ion-select-option>
+          <ion-select-option value="Misterio">Misterio</ion-select-option>
+          <ion-select-option value="Poesia">Poesia</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <br>
+        <ion-label>&nbsp;&nbsp;<b>Resumen:</b></ion-label>
+        <ion-item>
+        <ion-textarea placeholder="Resumen" inputMode="text" clearInput="true" formControlName="resumen" required></ion-textarea>
+      </ion-item>
+      <br>
+      <ion-label>&nbsp;&nbsp;<b>Valoración:</b></ion-label>
+      <ion-item>
+        <!-- <ion-input placeholder="Valoracion" inputMode="number" type="number" min="1" max="5" clearInput="true" formControlName="valoracion" required>
+        <ion-rating formControlName="valoracion" required>
+        </ion-rating>
+      </ion-input> -->
+      <ion-input>
+        <ion-rating formControlName="valoracion" required>
+        </ion-rating>
+      </ion-input>
+
+
+        <!-- <div class="star-rating">
+          <a >★</a>
+          <a >★</a>
+          <a >★</a>
+          <a >★</a>
+          <a >★</a>
+        </div> -->
+      </ion-item>
+
+      <!-- <h1 class="text-primary">
+        Angular 10 Start Rating Example
+        </h1>
+        <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+        <p>Rate: </p> -->
+    </ion-list>
+  </form>
+
+  <br>
+  <br>
+  <ion-list style="text-align:center">
+    <ion-button  color="success"  [disabled]="!createContactForm.valid" (click)="submitForm()">
+      GUARDAR
+    </ion-button>
+    &nbsp;
+    &nbsp;
+    <ion-button color="danger" (click)="dismissModal()">
+      CANCELAR 
+    </ion-button>
+    <br>
+    <br>
+  </ion-list>
+
+</fieldset>
+&nbsp;
+&nbsp;
+</ion-content>

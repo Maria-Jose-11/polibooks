@@ -1,0 +1,39 @@
+ion-content {
+  --padding-top: 16px;
+
+  .add-photo-wrapper {
+    justify-content: center;
+  }
+
+  .user-image {
+    --size: 100px;
+    margin: auto;
+  }
+}
+
+ion-toolbar {
+  --background: #b64fd8;
+  --color:#000;
+}
+
+.star-rating a {
+  display: inline-block;
+  color: #95a5a6; /* gris (normal) */
+}
+.star-rating:hover a {
+  color: #f39c12; /* amarillo (seleccionado) */
+}
+.star-rating:hover a:hover ~ a {
+    color: #95a5a6; /* gris (normal) */
+}
+
+ion-rating {
+  --color: gray;
+  --color-filled: green;
+}
+
+ngb-rating {
+  font-size: 100px;
+  color:brown;
+  background: rgba(23, 221, 16, 0.815);
+}

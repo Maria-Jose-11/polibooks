@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">POLI BOOKS</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<br>
+<ion-content class="ion-padding">
+  <div class=" ion-text-center">
+    <img  src="https://media.istockphoto.com/vectors/owl-with-books-and-graduate-cap-vector-id492966336?b=1&k=6&m=492966336&s=170667a&w=0&h=QuH2fv-obJRtClzZ7TG3qfvudwOEDmlZLfGG0N_nE0I=" width="90px" height="90px">
+  </div>
+  <br>
+  <form [formGroup]="credentials" (ngSubmit)="login()">
+    <ion-label> Correo electrónico: </ion-label>
+    <br>
+    <br>
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <br>
+      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+      <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Correo invalido</ion-note>
+    </ion-item>
+    <ion-label> Contraseña: </ion-label>
+    <br>
+    <br>
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      <ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors">El campo contraseña requiere mas de 6 caracteres</ion-note>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="!credentials.valid">Iniciar sesión</ion-button>
+    <ion-button expand="full" type="button" (click)="register()">Registrarse</ion-button>
+  </form>
+</ion-content>
