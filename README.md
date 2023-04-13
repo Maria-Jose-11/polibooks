@@ -8,11 +8,8 @@
 
   <p> Registrador de lectura virtual </p>
   
-   <img src="https://blog.cosasmolonas.com/wp-content/uploads/2015/04/registro-lectores-imprimible.jpg" alt="Logo" width="500" height="480">
-  
-    <a href="#sobre-proyecto">
-      <strong>Mas información del proyecto »</strong>
-    </a>
+   <img src="https://blog.cosasmolonas.com/wp-content/uploads/2015/04/registro-lectores-imprimible.jpg" alt="Logo" width="380" height="340">
+ 
 </div>
 
 
