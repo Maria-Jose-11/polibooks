@@ -8,6 +8,7 @@
 
   <p align="center">
   Registrador de lectura virtual
+    <br />
     Implementación de CRUD en Ionic-Firebase
     <br />
     <a href="#sobre-proyecto">
@@ -24,6 +25,8 @@
     <img src="https://res.cloudinary.com/dm0qsdpr8/image/upload/v1673872949/imagenes/portada_polibooks_lq15te.png" >
     <br></br>
 </div>
+
+https://blog.cosasmolonas.com/wp-content/uploads/2015/04/registro-lectores-imprimible.jpg
 
 El proyecto consiste en la implementación de un CRUD en Ionic. 
 
