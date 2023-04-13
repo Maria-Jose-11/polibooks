@@ -6,14 +6,12 @@
 
   <h3 align="center"><b>POLIBOOKS</b></h3>
 
-  Registrador de lectura virtual
+  <p> Registrador de lectura virtual </p>
   
    <img src="https://blog.cosasmolonas.com/wp-content/uploads/2015/04/registro-lectores-imprimible.jpg" alt="Logo" width="500" height="480">
   
-    <br>
- 
     <a href="#sobre-proyecto">
-    <strong>Mas información del proyecto »</strong>
+      <strong>Mas información del proyecto »</strong>
     </a>
     
 </div>
