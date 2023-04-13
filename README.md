@@ -7,8 +7,9 @@
   <h3 align="center"><b>POLIBOOKS</b></h3>
 
   Registrador de lectura virtual
+  
+   <img src="https://blog.cosasmolonas.com/wp-content/uploads/2015/04/registro-lectores-imprimible.jpg" alt="Logo" width="120" height="120">
     
-    ![image](https://user-images.githubusercontent.com/74751902/231830550-3f86a437-ae5f-46fe-8d34-243d019e0bb3.png)
     
     <br />
  
