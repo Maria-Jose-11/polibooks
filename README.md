@@ -6,16 +6,12 @@
 
   <h3 align="center"><b>POLIBOOKS</b></h3>
 
-  <p align="center">
   Registrador de lectura virtual
     
     ![image](https://user-images.githubusercontent.com/74751902/231830550-3f86a437-ae5f-46fe-8d34-243d019e0bb3.png)
-
     
     <br />
-   
-
-    <br />
+ 
     <a href="#sobre-proyecto">
     <strong>Mas información del proyecto »</strong>
     </a>
