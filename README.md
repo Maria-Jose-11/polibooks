@@ -7,6 +7,7 @@
   <h3 align="center"><b>POLIBOOKS</b></h3>
 
   <p align="center">
+  Registrador de lectura virtual
     Implementación de CRUD en Ionic-Firebase
     <br />
     <a href="#sobre-proyecto">
