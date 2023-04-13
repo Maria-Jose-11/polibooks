@@ -8,9 +8,12 @@
 
   <p align="center">
   Registrador de lectura virtual
-    <br />
     
-    ![image](https://user-images.githubusercontent.com/74751902/231830339-ce6f65e8-809a-4197-b8c4-631d92ceaf5b.png)
+    ![image](https://user-images.githubusercontent.com/74751902/231830550-3f86a437-ae5f-46fe-8d34-243d019e0bb3.png)
+
+    
+    <br />
+   
 
     <br />
     <a href="#sobre-proyecto">
@@ -18,7 +21,6 @@
     </a>
     <br />
     <br />
-  </p>
 </div>
 
 
