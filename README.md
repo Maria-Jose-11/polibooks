@@ -9,6 +9,7 @@
   <p align="center">
   Registrador de lectura virtual
     <br />
+    
     ![image](https://user-images.githubusercontent.com/74751902/231830339-ce6f65e8-809a-4197-b8c4-631d92ceaf5b.png)
 
     <br />
